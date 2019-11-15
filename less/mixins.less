@@ -1,0 +1,14 @@
+// Mixins in here
+.btn(@background-color, @color) {
+  padding: 12px;
+  font-size: 2rem;
+  color: @color;
+  text-align: center;
+  border-radius: 15px;
+  width: 85%;
+  background-color: @background-color;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(@background-color, 7%)
+  }
+}
