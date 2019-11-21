@@ -242,15 +242,17 @@ h1 {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #d5cfe1;
 }
 .footer p {
   text-align: center;
-  color: #212529;
   font-size: 1.6rem;
   padding: 20px;
 }
 .container {
   width: 50%;
   margin: 0 auto;
+}
+h3 {
+  color: blue;
 }
