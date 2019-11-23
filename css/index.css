@@ -169,6 +169,12 @@ nav {
   width: 100%;
   z-index: 1;
   background: #d5cfe1;
+  margin-bottom: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
 }
 .footer {
   width: 100%;
@@ -195,11 +201,16 @@ nav {
   height: 533;
 }
 header {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: flex;
 }
 header h1 {
-  margin-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+header img {
+  width: 100%;
 }
 .panel {
   margin-bottom: 60px;
