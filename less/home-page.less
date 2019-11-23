@@ -21,12 +21,13 @@
 header {
   display: flex;
   // margin-top: 40px;
-  // margin-bottom: 40px;
+  margin-bottom: 8vh;
   h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
+    // color: white;
+    text-shadow: 3px 3px @gray30;
   }
   img {
     width: 100%;
@@ -44,14 +45,23 @@ header {
 #about-me {
   display: flex;
   justify-content: space-around;
-  div {
-    width: 45%;
-  }
+  margin: 40px 0 40px 0;
 
   h2 {
     text-align: center;
   }
   img {
     width: 100%;
+  }
+  .cl-half {
+    width: 45%;
+
+    p {
+      font-size: 1.5vw;
+    }
+
+    h2 , p {
+      font-family: @cursive;
+    }
   }
 }

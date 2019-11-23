@@ -164,23 +164,48 @@ p {
   font-size: 1.5 rem;
 }
 nav {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  background: #d5cfe1;
-  margin-bottom: 20px;
-}
-nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
+  top: 0;
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  width: 100%;
+  z-index: 1;
+  background: rgba(250, 250, 250, 0.9);
+  margin-bottom: 20px;
+}
+nav #logo {
+  width: 45%;
+  font-size: 4rem;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+nav ul {
+  width: 45%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   font-size: 2rem;
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
+nav ul :hover {
+  color: #b7b6c1;
 }
-.footer p {
+nav ul a {
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+}
+footer .panel {
+  display: flex;
+  background: #464655;
+  color: #f5edf6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+footer p {
   text-align: center;
   font-size: 1.6rem;
   color: green;
@@ -202,12 +227,13 @@ nav ul {
 }
 header {
   display: flex;
+  margin-bottom: 8vh;
 }
 header h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
+  text-shadow: 3px 3px #d5cfe1;
 }
 header img {
   width: 100%;
@@ -221,13 +247,21 @@ header img {
 #about-me {
   display: flex;
   justify-content: space-around;
-}
-#about-me div {
-  width: 45%;
+  margin: 40px 0 40px 0;
 }
 #about-me h2 {
   text-align: center;
 }
 #about-me img {
   width: 100%;
+}
+#about-me .cl-half {
+  width: 45%;
+}
+#about-me .cl-half p {
+  font-size: 1.5vw;
+}
+#about-me .cl-half h2,
+#about-me .cl-half p {
+  font-family: 'Gloria Hallelujah', cursive;
 }
