@@ -1,5 +1,9 @@
 .cl-quarter {
-  width: 25%;
+  width: 24%;
+}
+.cl-quarter img {
+  width: 100%;
+  height: auto;
 }
 .cl-third {
   width: 33%;
@@ -10,15 +14,9 @@
 .cl-whole {
   width: 100%;
 }
-.cl-row {
-  padding: 20px;
+.cl-panel {
   display: flex;
-  align-content: space-around;
-}
-.cl-main {
-  width: 90%;
-  padding: 20px 40px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -156,51 +154,12 @@ h1 {
   text-align: center;
   border-bottom: ridge 10px black;
 }
-.content-header {
+nav {
+  top: 0;
+  position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 20px 28vw;
-}
-.content-header nav {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}
-.content-header nav a {
-  font-size: 2rem;
-  color: black;
-  text-decoration: none;
-}
-.content-header nav a:hover {
-  color: orange;
-}
-@media (max-width: 1200px) {
-  .content-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .content-header nav {
-    width: 80%;
-  }
-  .content-header nav a {
-    font-size: 1.25rem;
-  }
-}
-@media (max-width: 500px) {
-  .content-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .content-header nav {
-    width: 100%;
-  }
-  .content-header nav a {
-    font-size: 1rem;
-  }
+  z-index: 1;
+  background: #d5cfe1;
 }
 .footer {
   width: 100%;
@@ -212,12 +171,17 @@ h1 {
   color: green;
   padding: 20px;
 }
-.cl-main {
+.container {
   background: #f5edf6;
+  margin-top: 50px;
+  width: 98%;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
-.cl-row {
-  height: 600px;
-}
-.cl-row img {
-  height: 500px;
+#photographer {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  width: 800;
+  height: 533;
 }
