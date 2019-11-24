@@ -6,17 +6,26 @@ nav {
   top: 0;
   position: fixed;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   width: 100%;
   z-index: 1;
-  // background: white;
-  background: rgba(250,250,250,.9);
-  margin-bottom: 20px;
+  background: rgba(250, 250, 250, .9);
+  // margin-bottom: 25px;
+
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 
   #logo {
     width: 40%;
     font-size: 4vw;
     font-family: @cursive;
+
+    @media @tablet {
+      margin: 10px 0 15px 0;
+      text-align: center;
+    }
   }
 
   ul {
@@ -25,6 +34,10 @@ nav {
     display: flex;
     justify-content: space-between;
     font-size: 2vw;
+
+    @media@tablet {
+      font-size: 3vw;
+    }
 
     :hover {
       color: @gray40;
