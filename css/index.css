@@ -195,21 +195,32 @@ nav ul a {
   text-decoration: none;
 }
 footer {
+  font-size: 1.5vw;
+  background: #f5edf6;
+  padding: 40px;
   width: 100%;
 }
-footer .panel {
-  display: flex;
-  background: #464655;
+footer .cl-third {
+  border: 1px solid #d5cfe1;
+  padding: 50px;
+}
+footer h2 {
+  background: #94958b;
   color: #f5edf6;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
+  padding: 5px;
 }
 footer p {
-  text-align: center;
-  font-size: 1.6rem;
-  color: green;
-  padding: 20px;
+  padding-bottom: 20px;
+}
+footer #action {
+  display: flex;
+  flex-direction: column;
+}
+footer #action input,
+footer #action button {
+  font-size: 1.5vw;
+  padding: 5px;
+  margin-bottom: 15px;
 }
 .container {
   background: #f5edf6;
@@ -264,4 +275,7 @@ header img {
 #about-me .cl-half h2,
 #about-me .cl-half p {
   font-family: 'Gloria Hallelujah', cursive;
+}
+img {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
 }

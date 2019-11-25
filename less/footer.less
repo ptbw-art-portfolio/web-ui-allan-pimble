@@ -1,19 +1,32 @@
 footer {
-  .panel {
-    display: flex;
-    background: @dark-gray;
-    color: @gray10;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-  }
+  font-size: 1.5vw;
+  background: @gray10;
+  padding: 40px;
   width: 100%;
-  
-  p {
-    text-align: center;
-    // color: @font-color;
-    font-size: 1.6rem;
-    color: @mygreen;
-    padding: 20px;
+
+  .cl-third {
+    border: 1px solid @gray30;
+    padding: 50px;
   }
+
+  h2 {
+    background: @gray50;
+    color: @gray10;
+    padding: 5px;
+  }
+
+  p {
+    padding-bottom: 20px;
+  }
+
+  #action {
+    display: flex;
+    flex-direction: column;
+    input, button {
+      font-size: 1.5vw;
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
 }
